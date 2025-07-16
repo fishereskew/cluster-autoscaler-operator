@@ -225,6 +225,13 @@ spec:
                 required:
                 - enabled
                 type: object
+              scaleUp:
+                description: Configuration of scale up operation
+                properties:
+                  newPodScaleUpDelay:
+                    description: Scale up delay for new pods
+                    type: string
+                type: object
               skipNodesWithLocalStorage:
                 description: Enables/Disables `--skip-nodes-with-local-storage` CA
                   feature flag. If true cluster autoscaler will never delete nodes
